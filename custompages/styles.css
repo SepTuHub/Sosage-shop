@@ -1,0 +1,201 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #ff6347;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Расстояние между постами */
+    align-items: center; /* Центрирование всех постов по центру */
+}
+
+.post-item {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    max-width: 800px; /* Ограничение максимальной ширины блока */
+    width: 100%; /* Занимает всю доступную ширину */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Добавлена небольшая тень */
+}
+
+.post-image {
+    width: 30%; /* Ширина изображения */
+    height: 150px; /* Ограничиваем высоту изображения */
+    min-height: 150px; /* Минимальная высота изображения */
+    object-fit: cover; /* Обрезаем изображение, чтобы оно соответствовало размерам */
+    border-radius: 10px;
+    margin-right: 15px; /* Отступ справа для текста */
+}
+
+
+.post-text {
+    width: 70%; /* Увеличили ширину текста */
+}
+
+.post-text h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.post-text p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Стили для формы создания поста */
+.create-post {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.create-post h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.create-post form {
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+}
+
+.create-post label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.create-post input,
+.create-post textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.create-post button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.create-post button:hover {
+    background-color: #e55337;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Общие стили для динамических страниц */
+.dynamic-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.dynamic-page h1 {
+    font-size: 2em;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+.dynamic-page img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.dynamic-page p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.dynamic-page .price {
+    font-size: 1.5em;
+    color: #ff6347;
+    font-weight: bold;
+}
+
+.dynamic-page {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.dynamic-page h1 {
+    font-size: 2em;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+.dynamic-page p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.dynamic-page .price {
+    font-size: 1.5em;
+    color: #ff6347;
+    font-weight: bold;
+    margin-top: 20px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Продажа сосисок. Вкусные сосиски на любой вкус!">
+    <title>Создать пост</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="post-styles.css"> <!-- Подключаем CSS файл для стилей постов -->
+</head>
+<body>
+    <header>
+        <h1>SosageCompany</h1>
+        <nav>
+            <ul>
+                <li><a href="../post.html">Главная</a></li>
+                <li><a href="../index.html">Каталог</a></li>
+                <li><a href="../contacts.html">Контакты</a></li>
+                <li><a href="stat.html">Создать пост</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Секция существующих постов -->
+    <section class="post-section">
+        <div class="post-item">
+            <img src="statimage/statim1.png" alt="Описание первой картинки" class="post-image">
+            <div class="post-text">
+                <h2>Правила размещения постов</h2>
+                <p>Пожалуйста, загружайте посты, связанные исключительно с продукцией из сосисок. Все посты должны содержать информацию о конкретных продуктах, рецептах или мероприятиях, связанных с сосисками.</p>
+            </div>
+        </div>
+    
+        <div class="post-item">
+            <img src="statimage/statim2.png" alt="Описание второй картинки" class="post-image">
+            <div class="post-text">
+                <h2>Как создать пост</h2>
+                <p>Для добавления нового поста, пожалуйста, следуйте этим шагам:</p>
+                <p>
+                    Заполните заголовок и описание поста.
+                    Загрузите изображение, которое должно быть связано с содержанием поста.
+                    Убедитесь, что изображение имеет правильный формат и размер. Рекомендуется использовать изображения в формате JPEG или PNG.
+                    Сохраните пост и проверьте его отображение на сайте.
+                </p>
+            </div>
+        </div>
+    
+        <div class="post-item">
+            <img src="statimage/statim3.png" alt="Описание третьей картинки" class="post-image">
+            <div class="post-text">
+                <h2>Как получить URL для картинки</h2>
+                <p>Чтобы получить URL для изображения:</p>
+                <p>
+                    Загрузите изображение в папку <code>statimage</code> на вашем сервере.
+                    Щелкните правой кнопкой мыши на изображении и выберите "Копировать адрес изображения" в вашем браузере.
+                    Вставьте скопированный URL в поле для загрузки изображения.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Секция создания нового поста -->
+<section class="create-post">
+    <h2>Создать новый пост</h2>
+    <form action="/create" method="post">
+        <label for="title">Заголовок:</label>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="description">Описание:</label>
+        <textarea id="description" name="description" required></textarea><br><br>
+
+        <label for="price">Цена:</label>
+        <input type="text" id="price" name="price" required><br><br>
+
+        <label for="imageUrl">URL изображения:</label>
+        <input type="text" id="imageUrl" name="imageUrl"><br><br>
+
+        <button type="submit">Создать пост</button>
+    </form>
+</section>
+
+    <footer>
+        <p>&copy; 2024 Магазин сосисок. Все права защищены.</p>
+    </footer>
+</body>
+</html>
